@@ -1,0 +1,35 @@
+<%# <h1>Student#show</h1> %>
+<%#  <p>Find me in app/views/student/show.html.erb</p>%>
+
+
+<h1>Students Data</h1>
+
+
+
+
+<table>
+  <tr>
+      <th> Name </th>
+      <th>Address</th>
+      <th>phone</th>
+      <th>body</th>
+  </tr>
+  
+  <% @student.each do |stud| %>
+    <tr>
+    <td>
+       <%= stud.name %>
+    </td>
+    <td>
+    <%= stud.address %>
+     </td>
+     <td>
+     <%= stud.phone %>
+      </td>
+      <td>
+      <%= stud.body %>
+       </td>
+      </tr>
+  <% end %>
+  
+</table>
